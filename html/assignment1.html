@@ -1,0 +1,104 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+<script>
+function checkQty()
+{
+var qt = document.getElementById('qty').value;
+var tkr = document.getElementById('tkr').value;
+if(qt<10 || qt>100 || qt%10!=0)
+{
+alert("Invalid Quantity");
+
+}
+else{
+
+
+
+alert(qt+"  Shares purchased of "+tkr);
+
+}
+
+
+
+}
+</script>
+</head>
+<body>
+<h1 align = "center" >ONLINE STOCK TRADING</h1>
+<br>
+ <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">TICKER</th>
+                                <th scope="col">PRICE</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>WIPRO</td>
+                                <td>298.45</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>INFY</td>
+                                <td>949.95</td>
+                                
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>TCS</td>
+                                <td>2713.70</td>
+                             
+                            </tr>
+							 <tr>
+                                <th scope="row">4</th>
+                                <td>TECHM</td>
+                                <td>485.85</td>
+                             
+                            </tr>
+                        </tbody>
+                    </table>
+					
+					<br>
+					
+					<br>
+					
+					<h1>STOCK TRADING</H1>
+					<br><br>
+					<table class="table">
+                        
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Ticker</td>
+                                <td><input type = "text" placeholder = "Enter Ticker" id = "tkr"></td>
+                                
+                            </tr>
+							 <tr>
+                                <th scope="row">2</th>
+                                <td>Quantity</td>
+                                <td><input type = "number" placeholder = "Enter Quantity" id = "qty"></td>
+                                
+                            </tr>
+							<tr>
+							
+							<td><button class = "btn btn-dark" onclick="checkQty()">Submit</button></td>
+							</tr>
+							
+						</tbody>
+						</table>
+
+
+
+</body>
+</html>
+
+ 

@@ -1,0 +1,54 @@
+<html>
+	<head>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>  	
+	</head>
+		<body>	
+			<div class="container">
+			<header>
+        		<div class="row"> <! this will call row class in css file>
+           			<section>
+           				<div class="col-md-5"> <! this will call col-md-6 class in css file>
+              					<img class="title-logo" src="logo.jpg" width = "90px"height = "50px" alt="Online Video">
+           				</div>
+           				<div class="col-md-5 center">
+             
+              				<h1>Awesome Online Videos</h1>
+        
+                         
+           				</div>
+           			</section>
+
+        		</div>
+        		</header>
+			<div class="row text-center">
+  			<video id= "i" width="800" controls>
+  				<source src="Avengers.mp4" type="video/mp4">
+			</video>
+			</div>
+			
+			<div class="row">
+			<div class="col-md-12 text-center">
+				<button type="button" class="btn btn-success" onClick="play()">Play</button>
+			
+			
+				<button type="button" class="btn btn-danger" onClick="pause()">Pause</button>
+			
+			</div>
+			</div>
+			</div>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script>
+			var onlineVideo = document.getElementById("i");
+
+			function play() {
+				onlineVideo.play();
+			}
+			function pause() {
+				onlineVideo.pause();
+			}
+		</script>
+  		</body>
+		
+		
+	
+</html>

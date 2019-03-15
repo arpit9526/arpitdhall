@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+body {
+ background-image: url("back2.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+</style>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+
+      title:{
+      text: "BATTING STATS INDIA"
+      },
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+        { x: 5, y: 40 },
+        { x: 10, y: 75 },
+        { x: 15, y: 140 }
+        
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+<div align = "center" style = "padding-top:200px;opacity:0.8">
+  <div id="chartContainer" style="height: 300px; width: 50%;"></div>
+  </div>
+</body>
+</html>
